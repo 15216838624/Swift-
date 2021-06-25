@@ -1,0 +1,17 @@
+ [
+  {
+  "vcName": "HomeViewController",
+  "title": "首页",
+  "imageName": "tabbar_home"
+  },
+  {
+  "vcName": "DisCoverViewController",
+  "title": "发现",
+  "imageName": ""
+  },
+  {
+  "vcName": "MineViewController",
+  "title": "我的",
+  "imageName": "tabbar_profile"
+  }
+  ]
