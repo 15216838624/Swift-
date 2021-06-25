@@ -111,16 +111,14 @@
 		606B00AB268334160078A440 /* Swift项目 */ = {
 			isa = PBXGroup;
 			children = (
+				608873B326861A7C00A6B2ED /* Resource */,
 				608873B2268616FB00A6B2ED /* NetWorkSerVice */,
 				6086EBF726845EE2003FDEF4 /* Global */,
 				6086EBF626845E5F003FDEF4 /* Main */,
 				6086EBEE2684205F003FDEF4 /* MineViewController.swift */,
 				606B00C4268337A60078A440 /* HomeViewController.swift */,
 				6086EBF0268420A0003FDEF4 /* DisCoverViewController.swift */,
-				606B00B52683341A0078A440 /* Assets.xcassets */,
 				606B00B72683341A0078A440 /* LaunchScreen.storyboard */,
-				606B00BA2683341A0078A440 /* Info.plist */,
-				6086EC032684696D003FDEF4 /* Localizable.strings */,
 			);
 			path = "Swift项目";
 			sourceTree = "<group>";
@@ -128,7 +126,6 @@
 		6086EBF626845E5F003FDEF4 /* Main */ = {
 			isa = PBXGroup;
 			children = (
-				606B00C926833DE20078A440 /* MainVCSettings.json */,
 				606B00C2268337900078A440 /* MainViewController.swift */,
 				606B00AC268334160078A440 /* AppDelegate.swift */,
 				606B00B0268334160078A440 /* BaseViewController.swift */,
@@ -155,6 +152,17 @@
 				608873B02685AFD900A6B2ED /* MySerVice.swift */,
 			);
 			path = NetWorkSerVice;
+			sourceTree = "<group>";
+		};
+		608873B326861A7C00A6B2ED /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				606B00C926833DE20078A440 /* MainVCSettings.json */,
+				6086EC032684696D003FDEF4 /* Localizable.strings */,
+				606B00B52683341A0078A440 /* Assets.xcassets */,
+				606B00BA2683341A0078A440 /* Info.plist */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 		AF232321D055619B16A4088B /* Frameworks */ = {

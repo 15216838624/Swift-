@@ -14,7 +14,7 @@ import UIKit
 public func ClassFromString(_ string:String) -> UIViewController?{
     // -1.获取命名空间
       guard let nameSpace = Bundle.main.infoDictionary!["CFBundleExecutable"] as? String else {
-        print("没有获取到命名空间")
+        testPrint("没有获取到命名空间")
         return nil
       }
         let vcString =  nameSpace + "." + string
@@ -30,8 +30,7 @@ public func ClassFromString(_ string:String) -> UIViewController?{
         }
         //UIViewController.Type初始化一个UIViewContoller对象
         let vc = childVcClass.init()
-         
-         print(1)
+    
          return vc
 }
 
