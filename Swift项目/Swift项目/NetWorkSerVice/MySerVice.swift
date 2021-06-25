@@ -61,8 +61,9 @@ class Test {
    static func test() {
     let provider = MoyaProvider<MyService>()
 
-   provider.sendRequest(.zen, requestSuccess: { re in
-     
+   provider.SendRequest(.zen, requestSuccess: { re in
+      
+       print(re)
     
     })
 

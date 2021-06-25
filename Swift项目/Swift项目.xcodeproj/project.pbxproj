@@ -111,6 +111,7 @@
 		606B00AB268334160078A440 /* Swift项目 */ = {
 			isa = PBXGroup;
 			children = (
+				608873B2268616FB00A6B2ED /* NetWorkSerVice */,
 				6086EBF726845EE2003FDEF4 /* Global */,
 				6086EBF626845E5F003FDEF4 /* Main */,
 				6086EBEE2684205F003FDEF4 /* MineViewController.swift */,
@@ -120,8 +121,6 @@
 				606B00B72683341A0078A440 /* LaunchScreen.storyboard */,
 				606B00BA2683341A0078A440 /* Info.plist */,
 				6086EC032684696D003FDEF4 /* Localizable.strings */,
-				608873AE2685AE8400A6B2ED /* BaseService.swift */,
-				608873B02685AFD900A6B2ED /* MySerVice.swift */,
 			);
 			path = "Swift项目";
 			sourceTree = "<group>";
@@ -147,6 +146,15 @@
 				6086EC4126847CCF003FDEF4 /* LangueManger.swift */,
 			);
 			path = Global;
+			sourceTree = "<group>";
+		};
+		608873B2268616FB00A6B2ED /* NetWorkSerVice */ = {
+			isa = PBXGroup;
+			children = (
+				608873AE2685AE8400A6B2ED /* BaseService.swift */,
+				608873B02685AFD900A6B2ED /* MySerVice.swift */,
+			);
+			path = NetWorkSerVice;
 			sourceTree = "<group>";
 		};
 		AF232321D055619B16A4088B /* Frameworks */ = {

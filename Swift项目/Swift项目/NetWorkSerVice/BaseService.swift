@@ -29,20 +29,10 @@ public extension TargetType{
   
 }
 
-extension Moya.Response {
-    func mapNSArray() throws -> NSArray {
-        let any = try self.mapJSON()
-        guard let array = any as? NSArray else {
-            throw MoyaError.jsonMapping(self)
-        }
-        return array
-    }
-}
-
 
 extension MoyaProvider{
    @discardableResult
-   open func sendRequest(_ target: Target,
+   open func SendRequest(_ target: Target,
                       callbackQueue: DispatchQueue? = .none,
                       progress: ProgressBlock? = .none,
                       requestFail:@escaping(MoyaError) ->Void = { _ in return },requestSuccess:@escaping(Any) ->Void  = { _ in return }) -> Cancellable{
@@ -51,8 +41,10 @@ extension MoyaProvider{
             case let .success(response):
                if let obj = try? response.mapJSON() {
                    requestSuccess(obj)
+               }else if let objString = try? response.mapString() {
+                    requestSuccess(objString)
                }else{
-                   requestSuccess(response)
+                    requestSuccess(response)
                }
             break
             case let .failure(error):
@@ -61,5 +53,4 @@ extension MoyaProvider{
           }
         }
     }
-     
 }
