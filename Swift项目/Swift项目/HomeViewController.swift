@@ -6,7 +6,7 @@
 //
 
 import UIKit
-
+import Moya
 class HomeViewController: BaseViewController {
 
     override func viewDidLoad() {
@@ -14,6 +14,9 @@ class HomeViewController: BaseViewController {
         // Do any additional setup after loading the view.
         
         view.backgroundColor = dynamicColor(.red, .yellow)
+  
+        
+        Test.test()
         
 
     }

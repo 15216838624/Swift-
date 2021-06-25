@@ -24,6 +24,8 @@
 		6086EBFD2684620B003FDEF4 /* HTNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086EBFC2684620B003FDEF4 /* HTNavigationController.swift */; };
 		6086EC012684696D003FDEF4 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 6086EC032684696D003FDEF4 /* Localizable.strings */; };
 		6086EC4226847CD0003FDEF4 /* LangueManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086EC4126847CCF003FDEF4 /* LangueManger.swift */; };
+		608873AF2685AE8400A6B2ED /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873AE2685AE8400A6B2ED /* BaseService.swift */; };
+		608873B12685AFD900A6B2ED /* MySerVice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873B02685AFD900A6B2ED /* MySerVice.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -63,6 +65,8 @@
 		6086EC022684696D003FDEF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6086EC0426846972003FDEF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6086EC4126847CCF003FDEF4 /* LangueManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangueManger.swift; sourceTree = "<group>"; };
+		608873AE2685AE8400A6B2ED /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		608873B02685AFD900A6B2ED /* MySerVice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySerVice.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +120,8 @@
 				606B00B72683341A0078A440 /* LaunchScreen.storyboard */,
 				606B00BA2683341A0078A440 /* Info.plist */,
 				6086EC032684696D003FDEF4 /* Localizable.strings */,
+				608873AE2685AE8400A6B2ED /* BaseService.swift */,
+				608873B02685AFD900A6B2ED /* MySerVice.swift */,
 			);
 			path = "Swift项目";
 			sourceTree = "<group>";
@@ -273,9 +279,11 @@
 				606B00B1268334160078A440 /* BaseViewController.swift in Sources */,
 				6086EBFD2684620B003FDEF4 /* HTNavigationController.swift in Sources */,
 				6086EBF326842BDA003FDEF4 /* ColorTool.swift in Sources */,
+				608873B12685AFD900A6B2ED /* MySerVice.swift in Sources */,
 				606B00C726833A7A0078A440 /* Const.swift in Sources */,
 				6086EC4226847CD0003FDEF4 /* LangueManger.swift in Sources */,
 				606B00AD268334160078A440 /* AppDelegate.swift in Sources */,
+				608873AF2685AE8400A6B2ED /* BaseService.swift in Sources */,
 				606B00C5268337A60078A440 /* HomeViewController.swift in Sources */,
 				6086EBEF2684205F003FDEF4 /* MineViewController.swift in Sources */,
 				6086EBF5268452BA003FDEF4 /* Global.swift in Sources */,
