@@ -47,3 +47,7 @@ func testPrint<T>(_ msg:T,file:NSString = #file,line:Int = #line,fn:String = #fu
 func LoadString(text:String) ->String {
     return Bundle.main.localizedString(forKey: text, value: nil, table: nil)
 }
+
+
+
+
