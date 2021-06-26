@@ -6,11 +6,13 @@ class HTNavigationController: UINavigationController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
     }
-    
-
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return self.topViewController?.supportedInterfaceOrientations ?? .portrait
+    }
+    override var shouldAutorotate: Bool{
+        return self.topViewController?.shouldAutorotate ?? false
+    }
     /*
     // MARK: - Navigation
 

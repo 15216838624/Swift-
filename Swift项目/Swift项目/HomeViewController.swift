@@ -20,4 +20,12 @@ class HomeViewController: BaseViewController {
         
 
     }
+    
+    override func shouldAutorotate() -> Bool {
+        return true
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return [.landscapeLeft,.portrait]
+    }
+
 }

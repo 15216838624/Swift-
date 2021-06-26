@@ -42,8 +42,14 @@ class MainViewController: UITabBarController {
 
         childVc.title = title
         childVc.tabBarItem.image = UIImage(named: imageName)
-        let childNav = UINavigationController(rootViewController: childVc)
+        let childNav = HTNavigationController(rootViewController: childVc)
         addChild(childNav)
     }
     
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return self.selectedViewController?.supportedInterfaceOrientations ?? .portrait
+    }
+    override var shouldAutorotate: Bool{
+        return self.selectedViewController?.shouldAutorotate ?? false
+    }
 }

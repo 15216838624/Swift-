@@ -15,5 +15,11 @@ class BaseViewController: UIViewController {
         
 
     }
+      func shouldAutorotate() -> Bool {
+        return false
+    }
+    override var supportedInterfaceOrientations: UIInterfaceOrientationMask{
+        return .portrait
+    }
 }
 
