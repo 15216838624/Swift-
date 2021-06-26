@@ -12,8 +12,6 @@ class MainViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
-        
         self.tabBar.tintColor = .red
 
         let path =  Bundle.main.path(forResource:"MainVCSettings.json", ofType: nil)!

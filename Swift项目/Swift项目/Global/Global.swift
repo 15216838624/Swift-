@@ -1,13 +1,5 @@
-//
-//  Global.swift
-//  Swift项目
-//
-//  Created by 韩李涛 on 2021/6/24.
-//
 
 import UIKit
-
-
 
 public func ClassFromString(_ string:String) -> UIViewController?{
     // -1.获取命名空间
