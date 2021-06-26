@@ -14,5 +14,12 @@ target 'Swift项目' do
   pod 'Moya'
 
   pod 'Kingfisher'
+  
+  pod 'IQKeyboardManagerSwift'
 
+  pod 'MJRefresh'
+  
+  pod 'SVProgressHUD'
+  
+  pod 'LookinServer', :configurations => ['Debug']
 end
