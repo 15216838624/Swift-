@@ -14,8 +14,8 @@ class MainViewController: UITabBarController {
 
         // Do any additional setup after loading the view.
         
-    
-        
+        self.tabBar.tintColor = .red
+
         let path =  Bundle.main.path(forResource:"MainVCSettings.json", ofType: nil)!
         let data = NSData(contentsOfFile: path)
         guard let array   =  try? JSONSerialization.jsonObject(with: data! as Data, options: .allowFragments) as? [[String:Any]] else{
@@ -42,7 +42,6 @@ class MainViewController: UITabBarController {
 
         childVc.title = title
         childVc.tabBarItem.image = UIImage(named: imageName)
-        childVc.tabBarItem.selectedImage = UIImage(named: imageName + "_highlighted")
         let childNav = UINavigationController(rootViewController: childVc)
         addChild(childNav)
     }

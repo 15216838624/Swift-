@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Swift项目
+
+  Created by 韩李涛 on 2021/6/26.
+  
+*/
+
+CFBundleName = "Learning Cloud APP";
+CFBundleDisplayName = "Learning Cloud APP";

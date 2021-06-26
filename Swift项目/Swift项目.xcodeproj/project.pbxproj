@@ -26,6 +26,8 @@
 		6086EC4226847CD0003FDEF4 /* LangueManger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6086EC4126847CCF003FDEF4 /* LangueManger.swift */; };
 		608873AF2685AE8400A6B2ED /* BaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873AE2685AE8400A6B2ED /* BaseService.swift */; };
 		608873B12685AFD900A6B2ED /* MySerVice.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873B02685AFD900A6B2ED /* MySerVice.swift */; };
+		608873B62686E36700A6B2ED /* InfoPlist..strings in Resources */ = {isa = PBXBuildFile; fileRef = 608873B82686E36700A6B2ED /* InfoPlist..strings */; };
+		608873BC2686E43200A6B2ED /* launch_bg_welcome.png in Resources */ = {isa = PBXBuildFile; fileRef = 608873BB2686E43200A6B2ED /* launch_bg_welcome.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -65,8 +67,11 @@
 		6086EC022684696D003FDEF4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
 		6086EC0426846972003FDEF4 /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/Localizable.strings"; sourceTree = "<group>"; };
 		6086EC4126847CCF003FDEF4 /* LangueManger.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LangueManger.swift; sourceTree = "<group>"; };
-		608873AE2685AE8400A6B2ED /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; };
+		608873AE2685AE8400A6B2ED /* BaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseService.swift; sourceTree = "<group>"; wrapsLines = 0; };
 		608873B02685AFD900A6B2ED /* MySerVice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MySerVice.swift; sourceTree = "<group>"; };
+		608873B72686E36700A6B2ED /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist..strings; sourceTree = "<group>"; };
+		608873B92686E36900A6B2ED /* zh-Hans */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = "zh-Hans"; path = "zh-Hans.lproj/InfoPlist..strings"; sourceTree = "<group>"; };
+		608873BB2686E43200A6B2ED /* launch_bg_welcome.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = launch_bg_welcome.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,7 @@
 		606B00AB268334160078A440 /* Swift项目 */ = {
 			isa = PBXGroup;
 			children = (
+				608873BA2686E43200A6B2ED /* image */,
 				608873B326861A7C00A6B2ED /* Resource */,
 				608873B2268616FB00A6B2ED /* NetWorkSerVice */,
 				6086EBF726845EE2003FDEF4 /* Global */,
@@ -161,8 +167,18 @@
 				6086EC032684696D003FDEF4 /* Localizable.strings */,
 				606B00B52683341A0078A440 /* Assets.xcassets */,
 				606B00BA2683341A0078A440 /* Info.plist */,
+				608873B82686E36700A6B2ED /* InfoPlist..strings */,
 			);
 			path = Resource;
+			sourceTree = "<group>";
+		};
+		608873BA2686E43200A6B2ED /* image */ = {
+			isa = PBXGroup;
+			children = (
+				608873BB2686E43200A6B2ED /* launch_bg_welcome.png */,
+			);
+			name = image;
+			path = Resource/image;
 			sourceTree = "<group>";
 		};
 		AF232321D055619B16A4088B /* Frameworks */ = {
@@ -238,6 +254,8 @@
 				6086EC012684696D003FDEF4 /* Localizable.strings in Resources */,
 				606B00B62683341A0078A440 /* Assets.xcassets in Resources */,
 				606B00CA26833DE20078A440 /* MainVCSettings.json in Resources */,
+				608873BC2686E43200A6B2ED /* launch_bg_welcome.png in Resources */,
+				608873B62686E36700A6B2ED /* InfoPlist..strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -325,6 +343,15 @@
 				6086EC0426846972003FDEF4 /* zh-Hans */,
 			);
 			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		608873B82686E36700A6B2ED /* InfoPlist..strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				608873B72686E36700A6B2ED /* en */,
+				608873B92686E36900A6B2ED /* zh-Hans */,
+			);
+			name = InfoPlist..strings;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -456,7 +483,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2BYU663FV;
-				INFOPLIST_FILE = "Swift项目/Info.plist";
+				INFOPLIST_FILE = "Swift项目/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -477,7 +504,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = C2BYU663FV;
-				INFOPLIST_FILE = "Swift项目/Info.plist";
+				INFOPLIST_FILE = "Swift项目/Resource/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

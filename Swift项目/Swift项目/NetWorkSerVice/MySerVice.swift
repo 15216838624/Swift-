@@ -61,10 +61,13 @@ class Test {
    static func test() {
     let provider = MoyaProvider<MyService>()
 
-   provider.SendRequest(.zen, requestSuccess: { re in
-      
-       print(re)
+   provider.SendRequest(.zen, requestSuccess: { json in
     
+    
+    
+//      let a = json["result"]["data"].array!
+//       print(a)
+//      
     })
 
 
