@@ -24,6 +24,9 @@ class MineViewController: BaseViewController {
         }
         
         let btn:UIButton
+       // btn.titleLabel?.font
+        
+        let s:UIStackView
        
     }
 

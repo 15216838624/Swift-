@@ -8,9 +8,10 @@
 import UIKit
 
 extension UIButton {
-    convenience  init(title:String,imageName:String? = nil,backImageName:String? = nil) {
+    convenience  init(title:String,font:CGFloat, imageName:String? = nil,backImageName:String? = nil) {
         self.init()
-       self.setTitle(title, for: .normal)
+        self.setTitle(title, for: .normal)
+        self.titleLabel?.font = UIFont.systemFont(ofSize:font)
         if let image = imageName {
             self.setImage(UIImage.init(named: image), for: .normal)
         }

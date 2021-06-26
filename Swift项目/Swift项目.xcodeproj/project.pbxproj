@@ -30,6 +30,8 @@
 		608873D226873F1400A6B2ED /* GlobalImportModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873D126873F1400A6B2ED /* GlobalImportModule.swift */; };
 		608873DF26874D6C00A6B2ED /* UIButton+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873DE26874D6C00A6B2ED /* UIButton+Extension.swift */; };
 		608873E126874F3200A6B2ED /* CoverView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873E026874F3200A6B2ED /* CoverView.swift */; };
+		608873E32687586D00A6B2ED /* UILable+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873E22687586D00A6B2ED /* UILable+Extension.swift */; };
+		608873E5268759DC00A6B2ED /* UIStackView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 608873E4268759DC00A6B2ED /* UIStackView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -79,6 +81,8 @@
 		608873D42687441E00A6B2ED /* SwiftOC-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwiftOC-Bridging-Header.h"; sourceTree = "<group>"; };
 		608873DE26874D6C00A6B2ED /* UIButton+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Extension.swift"; sourceTree = "<group>"; };
 		608873E026874F3200A6B2ED /* CoverView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoverView.swift; sourceTree = "<group>"; };
+		608873E22687586D00A6B2ED /* UILable+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILable+Extension.swift"; sourceTree = "<group>"; };
+		608873E4268759DC00A6B2ED /* UIStackView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -243,6 +247,8 @@
 			isa = PBXGroup;
 			children = (
 				608873DE26874D6C00A6B2ED /* UIButton+Extension.swift */,
+				608873E22687586D00A6B2ED /* UILable+Extension.swift */,
+				608873E4268759DC00A6B2ED /* UIStackView+Extension.swift */,
 			);
 			path = Cateogrys;
 			sourceTree = "<group>";
@@ -388,6 +394,8 @@
 				606B00B1268334160078A440 /* BaseViewController.swift in Sources */,
 				6086EBFD2684620B003FDEF4 /* HTNavigationController.swift in Sources */,
 				608873E126874F3200A6B2ED /* CoverView.swift in Sources */,
+				608873E5268759DC00A6B2ED /* UIStackView+Extension.swift in Sources */,
+				608873E32687586D00A6B2ED /* UILable+Extension.swift in Sources */,
 				6086EBF326842BDA003FDEF4 /* ColorTool.swift in Sources */,
 				608873CE26873C4F00A6B2ED /* DisCoverViewController.swift in Sources */,
 				606B00C726833A7A0078A440 /* Const.swift in Sources */,
