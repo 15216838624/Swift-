@@ -7,65 +7,49 @@
 
 import UIKit
 
-class MineViewController: BaseViewController {
-
+class MineViewController: BaseTableViewContoller {
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = dynamicColor(.white,.red)
-        let tableview = UITableView()
-        view.addSubview(tableview)
-        tableview.dataSource = self
-        tableview.delegate = self
-        tableview.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
-        tableview.snp.makeConstraints { make in
-            make.left.right.equalToSuperview()
-            make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
-            make.bottom.equalTo(self.view.snp.bottom)
-        }
-        
-        let btn:UIButton
-       // btn.titleLabel?.font
-        
-        let s:UIStackView
-       
+        self.tableView.snp.makeConstraints { make in
+              make.left.right.equalToSuperview()
+              make.top.equalTo(self.view.safeAreaLayoutGuide.snp.top)
+              make.bottom.equalTo(self.view.snp.bottom)
+          }
+        self.tableView.register(UITableViewCell.self, forCellReuseIdentifier: "cell")
+        self.setUpWithDataSource(array: [1,2,3], cellBlock:{
+            indext,model in
+            let cell = self.tableView.dequeueReusableCell(withIdentifier: "cell", for: indext)
+              if indext.row == 0 {
+                 cell.textLabel?.text = "中文"
+              }else{
+                 cell.textLabel?.text = "英文"
+              }
+            return cell
+                                 
+        }, cellHeight: {
+            index,modle in
+            return 44
+        })
+
     }
-
-    
-    
-    
-
 }
-extension MineViewController:UITableViewDelegate,UITableViewDataSource
+
+extension MineViewController
 {
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2;
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.selectionStyle = .none
-        cell.accessoryType = .disclosureIndicator
-        if indexPath.item == 0 {
-            cell.textLabel?.text = "中文"
-        }else{
-            cell.textLabel?.text = "英文"
-        }
-        
-        return cell
-    }
-  
+
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if indexPath.row == 0 {
             LangueManger.switchToLangue(langue: LangueEnum.chinese)
         }else{
             LangueManger.switchToLangue(langue: LangueEnum.english)
         }
-        
+
         let str =  Bundle.main.localizedString(forKey: "test", value: "", table:nil)
-             
+
              testPrint(str)
 
     }
-    
+
     
 }
