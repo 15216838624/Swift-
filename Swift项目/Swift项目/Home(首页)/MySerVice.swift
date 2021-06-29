@@ -10,9 +10,9 @@ import Moya
 
 
  enum MyService {
-    case zen
-    case userProfile(String)
-    case userRepositories(String)
+    case logoin
+    case userInfFo(query: String)
+    case userAutority(String)
 }
 
 extension MyService: TargetType {
@@ -20,28 +20,29 @@ extension MyService: TargetType {
 
     public var path: String {
         switch self {
-        case .zen:
+        case .logoin:
             return ""
-        case .userProfile(let name):
-            return "/2222"
-        case .userRepositories(let name):
-            return "/333/repos"
+        case .userInfFo(_):
+            return ""
+        case .userAutority(_):
+            return ""
         }
     }
     public var method: Moya.Method {
         return .get
     }
     public var task: Task {
+        let parmeters: [String : Any] = [:]
         switch self {
-        case .userRepositories:
-            return .requestParameters(parameters: ["sort": "pushed"], encoding: URLEncoding.default)
-        default:
+        case .logoin:
             return .requestPlain
+        default:
+            return  .requestParameters(parameters: parmeters, encoding: JSONEncoding.default)
         }
     }
     public var validationType: ValidationType {
         switch self {
-        case .zen:
+        case .logoin:
             return .successCodes
         default:
             return .none
@@ -57,12 +58,31 @@ public func url(_ route: TargetType) -> String {
 
 // MARK: - Response Handlers
 
-class Test {
-   static func test() {
-    let provider = MoyaProvider<MyService>()
-
-    provider.SendRequest(.zen){ rev in
+class MyApi {
+    static func login( compete:@escaping([Any]) -> ()) {
+    NetWork.SendRequest(MultiTarget(MyService.logoin), callbackQueue: nil, progress: nil, requestFail: { error in
         
-    }
+    }, requestSuccess: {json in
+        
+      let array =  json["result"]["data"].arrayObject!
+        
+       compete(array)
+    
+     }
+      )
    }
+    static func getUsersInfo(name:String){
+        NetWork.SendRequest(MultiTarget(MyService.userInfFo(query: "hhh")), callbackQueue: nil, progress: nil, requestFail: { error in
+            
+        }, requestSuccess: {json in
+            print(json)
+      }
+    )
+}
+    
+    
+    
+
+    
+   
 }

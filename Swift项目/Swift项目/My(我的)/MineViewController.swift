@@ -31,7 +31,7 @@ class MineViewController: BaseTableViewContoller {
             index,modle in
             return 44
         })
-
+      
     }
 }
 

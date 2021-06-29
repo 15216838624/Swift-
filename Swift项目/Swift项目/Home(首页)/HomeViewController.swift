@@ -30,10 +30,12 @@ class HomeViewController: BaseViewController {
             make.centerX.equalToSuperview()
             make.top.equalToSuperview().offset(300)
         }
-        
-        Test.test()
-        
 
+        MyApi.login { respons in
+            print(respons)
+        }
+        
+        
     }
     
     override func shouldAutorotate() -> Bool {

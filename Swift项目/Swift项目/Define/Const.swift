@@ -14,4 +14,4 @@ let ScreenHeight = UIScreen.main.bounds.height
 
 let ScreenBounds = UIScreen.main.bounds
 
-let BaseUrlString = "https://www.jianshu.com/p/3b724005b3ef"
+let BaseUrlString = "http://v.juhe.cn/toutiao/index?type=top&key=ff6441924682680ded3be43bf134b196"
